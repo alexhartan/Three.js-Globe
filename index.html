@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<head>
+		<!-- Primary Meta Tags -->
+		<title>Selfpay</title>
+		<meta name="title" content="Selfpay">
+		<meta name="description" content="">
+
+		<script type="text/javascript">
+			const earthVariables = {
+				spinSpeed:0.5,//degrees turned per frame
+				friction:0.98,// control how fast it slows down when you spin it
+				initialValues:[90, 0],//angle the globe starts at
+
+				outerDotTexture:"dist/textures/particle.png",//shape of the dots
+				innerDotTexture:"dist/textures/particle.png",//shape of the dots
+				outerDots:true,//show the outer dots
+				innerDots:true,//show the inner dots
+				outerSize:1,//size of the outer dots
+				innerSize:1,//size of the inner dots
+				outerOpacity:0.1,//dot opacity outside
+				innerOpacity:0.4,//dot opacity inside
+
+				lineOpacity:0.4,
+
+				globeTexture:"dist/textures/matcap/3E2335_D36A1B_8E4A2E_2842A5-512px.png",//matcap material for oceans
+				globeOpacity:0.6,
+				landTexture:"dist/textures/matcap/EAEAEA_B6B6B6_CCCCCC_C4C4C4-512px.png",//matcap material for land
+				landOpacity:0.2,
+				wireTexture:"dist/textures/matcap/EAEAEA_B6B6B6_CCCCCC_C4C4C4-512px.png",//matcap material for wire
+				wireOpacity:0.2,
+
+				fps:false,//show FPS
+			}
+		</script>
+		<script defer="defer" src="dist/bundle.js"></script>
+		<link href="dist/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="three-container" class="abscenter"></div>
+		</div>
+	</body>
+</html>
